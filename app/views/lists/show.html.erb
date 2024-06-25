@@ -1,0 +1,8 @@
+<h1><%= @list.name %></h1>
+<%= link_to 'Add a movie', new_list_bookmark_path(@list) %>
+
+<div class="d-flex gap-3">
+  <% @list.bookmarks.each do |bookmark| %>
+    <%= render 'movie_card', movie: bookmark.movie, bookmark: bookmark %>
+  <% end %>
+</div>

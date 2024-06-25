@@ -1,0 +1,6 @@
+<%= link_to list_path(list) do %>
+  <div class="card w-100 p-2 mb-2">
+    <h2 class="text-decoration-none"><%= list.name %></h2>
+    <p class="text-decoration-none"><%= list.movies.count %> movies</p>
+  </div>
+<% end %>

@@ -1,0 +1,16 @@
+.movie-card{
+  min-height: 300x;
+  flex: 1;
+  max-width: 300px;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+
+
+  img {
+    object-fit: contain;
+    object-position: center;
+    max-width: 100%;
+  }
+}
