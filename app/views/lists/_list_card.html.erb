@@ -1,6 +1,3 @@
-<%= link_to list_path(list) do %>
-  <div class="card w-100 p-2 mb-2">
-    <h2 class="text-decoration-none"><%= list.name %></h2>
-    <p class="text-decoration-none"><%= list.movies.count %> movies</p>
+  <div class="list-card p-2 mb-2" style="background-image: url(<%= list.photo_url %>)">
+    <%= link_to list.name, list_path(list), class: 'text-decoration-none' %>
   </div>
-<% end %>
